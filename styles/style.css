@@ -117,3 +117,14 @@ footer {
     }
 
   }
+
+  .poke-img {
+      cursor: pointer;
+      height: 200px;
+      width: 200px;
+      transition: .2s;
+  }
+
+  .poke-img:hover {
+      transform: scale(1.2) rotate(5deg);
+  }
