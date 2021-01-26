@@ -62,3 +62,4 @@ export function renderPokeImage(pokemonItem) {
     });
     return image;
 }
+
