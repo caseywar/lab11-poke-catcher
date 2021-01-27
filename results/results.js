@@ -29,7 +29,7 @@ var myChart = new Chart(ctx, { // eslint-disable-line
     data: {
         labels: makeLabelsArray(pokeStats),
         datasets: [{
-            label: 'number of times seenn',
+            label: 'number of times seen',
             data: makeSeenArray(pokeStats),
             backgroundColor: 'rgba(252, 85, 218, 0.79)',
             borderColor: 'rgba(255, 99, 132, 1)',
