@@ -1,5 +1,6 @@
 const POKESTATS = 'POKESTATS';
 import { findByUnderscoreId } from './utils.js';
+import pokemon from './data.js';
 
 export function getPokeStats() {
     let stats = JSON.parse(localStorage.getItem(POKESTATS));
@@ -21,7 +22,9 @@ export function incrementSeen(_id) {
     const poke = findByUnderscoreId(stats, _id);
 
     if (!poke) {
+        const dataPokemon = findByUnderscoreId(pokemon, _id);
         const newStat = {
+            name: dataPokemon.pokebase,
             _id: _id,
             seen: 1,
             caught: 0,
