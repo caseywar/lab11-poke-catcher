@@ -126,5 +126,5 @@ footer {
   }
 
   .poke-img:hover {
-      transform: scale(1.2) rotate(5deg);
+      transform: scale(2) rotate(360deg);
   }
